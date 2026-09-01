@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="formInput" style="display: flex; flex-direction: column; width: 200px;">
+        <input type="text" name="name" id="name">
+        <input type="text" id="price" name="price">
+        <input type="text" id="stock" name="stock">
+        <input type="text" id="qty" name="qty">
+        <table style="" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Stock</th>
+            </tr>
+            <tbody id="table-row">
+
+            </tbody>
+        </table>
+        <button type="submit">Save</button>
+
+    </form>
+</body>
+<script>
+    const n = document.getElementById("name")
+    const price = document.getElementById("price")
+    const stock = document.getElementById("stock")
+    const qty = document.getElementById("qty")
+    const formIn = document.getElementById("formInput")
+    let total = Number(price.value) * Number(qty.value);
+    const row_table = document.getElementById('table-row')
+    let product = [];
+    formIn.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const products = {
+            date: Date.now(),
+            name: n.value,
+            price: Number(price.value),
+            qty: Number(qty.value),
+            stock: Number(stock.value)
+        }
+        product.push(products)
+        row_table.innerHTML = "";
+
+        product.forEach((p) => {
+            row_table.innerHTML += `
+        <tr>
+            <td>${p.name}</td>
+            <td>${p.price}</td>
+            <td>${p.qty}</td>
+            <td>${p.stock}</td>
+        </tr>
+    `;
+        });
+
+    })
+</script>
