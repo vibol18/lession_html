@@ -1,0 +1,20 @@
+/* inline style: style on tage
+internal style:
+ style on head
+ "." = class name
+ "#" = id name
+ tag: tage name
+
+ stye:
+ width: left right
+ height: buttom top
+ color : chang text color
+ background-colro: chang color of background
+ display flex: item row
+
+ display:flex
+ align-items: center
+ align-items: center 
+ Item on center
+
+font-weight:bold; change text to bold */

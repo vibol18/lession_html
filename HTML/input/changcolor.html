@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Color Changer</title>
 </head>
-<body>
+
+<body id="body">
 
     <h1 id="heading1">Choose Body Color</h1>
 
     <input type="color" id="colorPicker">
-
+    <input type="range" id="range">
     <h1 id="Message">Message</h1>
     <h1 id="yes">Yes</h1>
     <h1 id="no">No</h1>
 
     <script>
+        const range = document.getElementById("range")
         const colorPicker = document.getElementById("colorPicker");
+        const heading = document.getElementById("body");
         colorPicker.addEventListener("input", function () {
-            document.getElementById("heading1").style.color = colorPicker.value;
+            heading.style.backgroundColor = colorPicker.value;
         });
-        const Message = document.getElementById("Message")
 
     </script>
 
 </body>
+
 </html>
