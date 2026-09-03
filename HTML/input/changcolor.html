@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changer</title>
+</head>
+<body>
+
+    <h1 id="heading1">Choose Body Color</h1>
+
+    <input type="color" id="colorPicker">
+
+    <h1 id="Message">Message</h1>
+    <h1 id="yes">Yes</h1>
+    <h1 id="no">No</h1>
+
+    <script>
+        const colorPicker = document.getElementById("colorPicker");
+        colorPicker.addEventListener("input", function () {
+            document.getElementById("heading1").style.color = colorPicker.value;
+        });
+        const Message = document.getElementById("Message")
+
+    </script>
+
+</body>
+</html>
