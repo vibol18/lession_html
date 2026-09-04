@@ -12,7 +12,7 @@ internal style:
  background-colro: chang color of background
  display flex: item row
 
- display:flex
+ display:flex   
  align-items: center
  align-items: center 
  Item on center
