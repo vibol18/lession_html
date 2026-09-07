@@ -5,6 +5,7 @@ internal style:
  "#" = id name
  tag: tage name
 
+
  stye:
  width: left right
  height: buttom top
