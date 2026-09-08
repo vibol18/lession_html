@@ -11,6 +11,7 @@ body{
 .container{
     border: 1px solid black;
     width: 700px;
+    box-shadow: 1px 1px 2px 2px;
 }
 .container .header{
     height: 40px;
