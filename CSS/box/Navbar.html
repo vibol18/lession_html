@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/assets/app/app-zando-logo.png"
+        type="image/x-icon">
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+        }
+        .header {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            color: white;
+        }
         .navbar{
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            display: flex;
+
+            box-shadow: 1px 1px 2px 2px black;
+
+        }
+        .navbar .dakeykorban{
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            background-color: aquamarine;
+            gap: 20px;
+            list-style-type: none;
         }
-        .navbar .menu {
+        .navbar .dakeykorban a{
+            text-decoration: none;
+        }
+
+        .navbar .logo-item{
             display: flex;
-            gap: 30px;
+           gap: 20px;
         }
+        .navbar .logo-item input{
+            height: 20px;
+        }
+        .navbar .logo-item img{
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            border-radius: 50%;
+        }
+
     </style>
 </head>
+
 <body>
+    <header class="header">
+        9.9 SALE ទទួលបានប័ណ្ណបញ្ចុះតម្លៃបន្ថែមរហូតដល់ 18% + ដឹកជញ្ជូនឥតគិតថ្លៃ
+    </header>
     <nav class="navbar">
 
-        <div class="menu">
-            <b>Girl</b>
-            <b>Man</b>
-            <b>Beuty</b>
-            <b>lifestyle</b>
-            <b>komar</b>
-        </div>
+        <ul class="dakeykorban">
+            <li><a href="#">នារី</a></li>
+            <li><a href="#about">បុរស</a></li>
+            <li><a href="#product">BEAUTY</a></li>
+            <li><a href="#fotter">Komar</a></li>
+        </ul>
 
         <div class="name">
-            <h2>ZANDO</h2>
+            <h3>ZANDO</h3>
         </div>
 
-        <div class="">
-            <div class="flag"></div>
+        <div class="logo-item">
+            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6fUfrfVBEd7RAXv8PYQVmiBT8GJYkk7xGyKt-SWY4w&s=10" alt="">
             <input type="text">
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
         </div>
-         
     </nav>
 </body>
+
 </html>
