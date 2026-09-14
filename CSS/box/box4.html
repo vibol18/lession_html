@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-box{
+            border: 1px solid red;
+            width: 700px;
+
+        }
+        .container-box .container{
+            display: flex;
+        }
+        .container .logo{
+            background-color: red;
+            height: 80px;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container  .heading{
+            background-color: green;
+            width: 80%;
+        }
+        .container-box menu{
+            background-color: yellow;
+            height: 80px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-box  .section{
+            display: flex;
+
+        }
+        .section , .section1 , .section2 , .section3 , .heading , .page-content , .sidebar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .section .section1{
+            background-color: blue;
+            height: 120px;
+            width: 33.33%;
+        }
+        .section .section2{
+            background-color: rgb(114, 223, 19);
+            height: 120px;
+            width: 33.33%;
+        }
+        .section .section3{
+            background-color: rgb(1, 1, 19);
+            height: 120px;
+            width: 33.33%;
+        }
+        .container-box .page{
+            display: flex;
+        }
+        .page .page-content{
+            background-color: #0ae063;
+            height: 200px;
+            width: 80%;
+        }
+        .page .sidebar{
+            width: 20%;
+            background-color: brown;
+        }
+        footer{
+            background-color: #5500ff;
+            height: 82px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-box">
+        <div class="container">
+            <div class="logo">Logo</div>
+            <header class="heading">Heading</header>
+        </div>
+
+        <menu>Menu</menu>
+
+        <div class="section" style="border: 5px solid pink;">
+            <section class="section1">section1</section>
+            <section class="section2">section1</section>
+            <section class="section3">section3</section>
+        </div>
+
+        <div class="page">
+            <div class="page-content">pagecontain</div>
+            <div class="sidebar">sidebar</div>
+        </div>
+
+        <footer class="foter">footer</footer>
+    </div>
+</body>
+</html>
