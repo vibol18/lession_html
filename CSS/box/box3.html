@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            width: 600px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .container .header{
+            background-color: blue;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .item-container{
+            display: flex;
+            gap: 20px;
+        }
+        .container .item-container .item1{
+            width: 70%;
+            height: 200px;
+            background-color: blue;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .item-container .item1:hover{
+            background-color: red;
+             border-radius: 20px;
+             box-shadow: 0px 0px 2px 2px black;
+        }
+        .container .item-container .item2{
+            width: 30%;
+            height: 200px;
+            background-color: blue;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .fotter{
+            background-color: blue;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <div class="container">
+        <!-- item1 -->
+        <header class="bg-blue-500 animate-spin">
+            Header
+        </header>
+        <!-- item2 -->
+        <div class="item-container">
+            <div class="item1">Main Section</div>
+            <div class="item2">Size Section</div>
+        </div>
+        <!-- item3 -->
+        <Footer class="fotter">Footer</Footer>
+    </div>
+</body>
+</html>
