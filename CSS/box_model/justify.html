@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex start  */
+        .container1{
+            display: flex;
+            gap: 30px;
+            justify-content: flex-start;  
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            border: 1px solid pink;
+            border-radius: 15px;
+            background-color: blue;  
+        }
+        .container2{
+            display: flex;
+            gap: 30px;
+            justify-content: flex-end;
+        }
+        .container3{
+            justify-content: center ;
+            display: flex;
+            gap: 30px;
+        }
+    
+        .container4{
+            display: flex;
+            justify-content: space-around  ;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container1">
+        <p>flex start</p>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div><br>
+
+    <div class="container2">
+        <p>flex-end</p>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div><br>
+
+    <div class="container3">
+        <p>justify-center</p>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div><br>
+
+    <div class="container4">
+        <p>space aroubd</p>
+        <div class="box">
+            <h1>Hello</h1>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container5">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container .wellcome{
+            font-weight: bold;
+            font-size: 40px;
+            color: white;
+            text-shadow: 1px 5px 5px pink;
+
+        }
+        .wellcome:hover{
+            background-color: blue;
+            color: pink;
+        }
+        .box{
+            box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+        p{
+            color: white;
+        }
+        .box-content{
+            display: flex;
+            gap: 10px;
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box-content:hover{
+            display: flex;
+            width: 600px;
+        }
+        .box1:hover{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee behavior="" direction="right" class="wellcome">Wellcome To ........</marquee>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores sunt dolores illum incidunt, odit ratione inventore laboriosam excepturi ipsum porro ullam eius sed ducimus voluptates id, reiciendis vel vero?</p>
+        <div class="box"></div>
+        
+        <div class="box-content">
+            <div class="box1">
+                Hello
+            </div>
+            <div class="box1"></div>
+        </div>
+
+    </div>
+</body>
+</html>

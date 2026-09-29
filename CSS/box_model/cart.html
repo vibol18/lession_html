@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .cart{
+            border: 1px solid black;
+            width: 600px;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cart-container{
+            width: 90%;
+            height: 90%;
+            border-radius: 15px;
+           box-shadow: 0px 0px 5px 5px rgb(166, 162, 162);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            background-color: gray;
+            box-shadow: 0px 0px 2px 2px gray;
+            width: 500px;
+            height: 350px;
+            border-radius: 15px;
+            background-image: url('https://m.media-amazon.com/images/I/51KmxQjXBlL.jpg');
+            background-size: cover;
+            background-position: center;
+          
+        }
+        button{
+            background-color: blue;
+            border: none;
+            margin-top: 20px;
+            height: 40px;
+            width: 90px;
+            font-weight: bold;
+            color: aliceblue;
+            border-radius: 10px;
+        }
+        .name{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .price{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <div class="cart-container">
+            <div>
+                <div class="image"></div>
+                <div style="margin-top: 40px;">
+                <p class="name">Headport</p>
+                <p class="price">$12.88</p>
+                <button onclick="alert('Products Is Add to cart')">Add To cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

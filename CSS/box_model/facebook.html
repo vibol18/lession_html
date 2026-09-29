@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile {
+            border: 4px solid blue;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .profile_image {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            position: absolute;
+
+        }
+
+        .name {
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .add {
+            background-color: blue;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .edit {
+            background-color: blue;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: green;
+            width: 40px;
+            height: 40px;
+            top: 70px;
+            left: 70px;
+            position: relative;
+            border-radius: 50%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        }
+
+        .navbar {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            margin-bottom: 230px;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+
+        .profile1 {
+            display: flex;
+            gap: 40px;
+            margin-right: 20px;
+        }
+
+        .app-name {
+            margin-left: 20px;
+        }
+        .user_profile{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="app-name">
+            <div class="icon"></div>
+            <input type="text">
+        </div>
+
+        <ul class="menu">
+            <li><a href="">home</a></li>
+            <li><a href="">Video</a></li>
+            <li><a href="">Marketplace</a></li>
+            <li><a href="">Group</a></li>
+            <li><a href="">Game</a></li>
+        </ul>
+
+        <div class="profile1">
+            <div class="menu">menu</div>
+            <div class="message">message</div>
+            <div class="bell">Notification</div>
+            <div class="profile_image"></div>
+        </div>
+
+    </nav>
+
+    <div class="user_profile">
+    <div class="profile">
+        <img src="https://scontent.fpnh18-2.fna.fbcdn.net/v/t39.30808-1/419425415_320226054121290_7261556200558571577_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x2048&ctp=s200x200&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeF0koEbPK5UkJHLGwxMiLsR2EjVsWCeepjYSNWxYJ56mECbU1VpYD3fEnjc0LmdcQqXfJvh71dLUbkjTyCnesu2&_nc_ohc=IJ7asafq8PsQ7kNvwHwnh3b&_nc_oc=Adq63G4Wg7dRPeWxNTOwfANMbH6NSHs-HL_mShn4_Y31zHgURyYX6vlpnHzopi_6IK8&_nc_zt=24&_nc_ht=scontent.fpnh18-2.fna&_nc_gid=NBEtcTtvAXJzcgniImONnA&_nc_ss=7b2a8&oh=00_AQI5cbTU3mDbHUHkwdgy1TXQMXWeLASZzkBynwF1EHt_Tw&oe=6AB84D63"
+            class="profile_image" alt="">
+        <div class="active"></div>
+    </div>
+    <div class="name">Visal smos</div>
+    <p>1 follower</p>
+    <p>no pain no gain</p>
+
+    <div class="info">
+        <button class="add">+Add Story</button>
+        <button class="edit">Edit profile</button>
+        <button>...</button>
+    </div>
+    </div>
+</body>
+
+</html>
