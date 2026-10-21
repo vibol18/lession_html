@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .product-card{
+            position: sticky;
+        }
+
+        .header {
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            display: flex;
+            width: 100%;
+            gap: 30px;
+            align-items: center;
+            position: fixed;
+            justify-content: space-around;
+            height: 40px;
+        }
+
+        .product {
+            border: 1px solid blue;
+        }
+
+        .product-container {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .category {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .category-container {
+            display: flex;
+            overflow-x: auto;
+            border: 1px solid black;
+            gap: 50px;
+        }
+
+        .cate-image {
+            width: 50px;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu{
+            align-items: center;
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="Logo">
+            <h1>Shop Test</h1>
+        </div>
+
+        <div class="menu">
+            <a href="#hello">Hello</a>
+            <a href="">Home</a>
+            <a href="">about</a>
+            <a class="contact">Hello</a>
+        </div>
+
+        <div class="icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="category-container">
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+        <div class="category">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkLgYdafB8Lyz6lgDzQdjQqnSu-XYyUXnnprK0oXeColc1sp3csyeyK0&s=10"
+                alt="" class="cate-image">
+            <p>Drink</p>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product" style="">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/banner/2026/ZANDO%20New%20Version/New%20asset%20for%20updated%20size/by%20category/2.png"
+                alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+
+
+       
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="https://zand.sgp1.cdn.digitaloceanspaces.com/cache/catalog/products/2026-06/21226021673/PTAK0039-cr-450x672.jpg" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+        <div class="product">
+            <img src="" alt="">
+            <div class="price">$82</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur, hic dolorum amet tenetur
+                magni id maiores minima quaerat expedita asperiores voluptates, iste at ipsa, impedit provident et!
+                Excepturi, quas?</p>
+        </div>
+
+    </div>
+    <h1 id="hello">Hello</h1>
+
+     <div class="product-card">
+            <h1>Hello from sticky</h1>
+            <h2>Stikik</h2>
+        </div>
+    <h1 style="margin-top: 1500px;"></h1>
+</body>
+
+</html>
