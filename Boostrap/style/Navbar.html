@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .categories {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .categories::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+
+<body>
+    <nav class="d-flex bg-secondary justify-content-around align-items-center
+            py-3 position-fixed top-0 start-0 w-100 " style="z-index: 1000;">
+        <ul class="d-flex list-unstyled gap-4">
+            <li><a class="text-decoration-none fs-5 fw-bold" href="">Home</a></li>
+            <li><a class="text-decoration-none fs-5 fw-bold" href="">About</a></li>
+            <li><a class="text-decoration-none fs-5 fw-bold" href="">Products</a></li>
+            <li><a class="text-decoration-none fs-5 fw-bold" href="">Faq</a></li>
+        </ul>
+        <div class="logo">
+            <img class="" style="width: 170px;" src="https://zandoshops.com/images/logos/ZANDO-NEW-LOGO-2025.png"
+                alt="">
+        </div>
+        <div class="icon fs-8">
+            <svg clas="fw-bold" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-bell" viewBox="0 0 16 16">
+                <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+            </svg>
+        </div>
+    </nav>
+    <div class="container  gap-5 mt-5" style="margin-top: 170px;">
+        <div id="carouselStackedBottom" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbs22SZrZMcIevdK-Ry5toFKGRKxzwOk7baXZLAUfJWpBuBK_9QcbHsh4&s=10"
+                        class="d-block w-100" alt="slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbs22SZrZMcIevdK-Ry5toFKGRKxzwOk7baXZLAUfJWpBuBK_9QcbHsh4&s=10"
+                        class="d-block w-100" alt="slide 2">
+                </div>
+                <div class="carousel-item rounded-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbs22SZrZMcIevdK-Ry5toFKGRKxzwOk7baXZLAUfJWpBuBK_9QcbHsh4&s=10"
+                        class="d-block w-100" alt="slide 3">
+                </div>
+            </div>
+            <div>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedBottom"
+                    data-bs-slide="prev">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedBottom"
+                    data-bs-slide="next">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="">Next</span>
+                </button>
+            </div>
+        </div>
+        <h1 class="fw-bold text-warning">Our Categories</h1>
+        <div class="categories d-flex flex-nowrap gap-5 py-5 overflow-x-auto w-100">
+            <div class=" card flex-shrink-0 " style="height: 80px; width: 160px;">
+                <h2>Hello</h2>
+            </div>
+
+            <div class="card flex-shrink-0" style="height: 80px; width: 160px;">
+                <h2>Hello</h2>
+            </div>
+
+            <div class="card flex-shrink-0" style="height: 80px; width: 160px;">
+                <h2>Hello</h2>
+            </div>
+
+            <div class="card flex-shrink-0" style="height: 80px; width: 160px;">
+                <h2>Hello</h2>
+            </div>
+
+            <div class="card flex-shrink-0" style="height: 80px; width: 160px;">
+                <h2>Hello</h2>
+            </div>
+
+            <div class="card flex-shrink-0" style="height: 40px; width: 160px;">
+                <h2>Hello</h2>
+            </div>
+
+            <div class="card flex-shrink-0" style="height: 40px; width: 160px;">
+                <h2>Hello</h2>
+            </div>
+        </div>
+        <div class="d-flex gap-5 mt-5">
+            <div class="card pt-3 rounded-3" style="width: 400px;">
+                <div class="card-body">
+                    <img src="https://i5.walmartimages.com/seo/VEAT00L-Wireless-Earbuds-Bluetooth-5-3-Headset-Microphone-Touch-Control-IPX7-Waterproof-High-Fidelity-Stereo-Earphones-Sports-Work-66H-Playtime-Lapto_51533b6e-c49e-4459-9787-3c45d26de3ec.6ad6cf413848b8ff85c27d97aca66841.jpeg"
+                        alt="" class="card-img-top">
+                    <div class="card-text">$12.77</div>
+                    <p class="card-title fw-bold text-truncate">Wirless Head accordionpk;oji;hougliykcyjfxhdcg</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-success">Add To Cart</button>
+                        <button class="btn btn-secondary">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card pt-3 rounded-3" style="width: 400px;">
+                <div class="card-body">
+                    <img src="https://i5.walmartimages.com/seo/VEAT00L-Wireless-Earbuds-Bluetooth-5-3-Headset-Microphone-Touch-Control-IPX7-Waterproof-High-Fidelity-Stereo-Earphones-Sports-Work-66H-Playtime-Lapto_51533b6e-c49e-4459-9787-3c45d26de3ec.6ad6cf413848b8ff85c27d97aca66841.jpeg"
+                        alt="" class="card-img-top">
+                    <div class="card-text">$12.77</div>
+                    <p class="card-title fw-bold">Wirless Head accordion</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-success">Add To Cart</button>
+                        <button class="btn btn-secondary">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card pt-3 rounded-3" style="width: 400px;">
+                <div class="card-body">
+                    <img src="https://i5.walmartimages.com/seo/VEAT00L-Wireless-Earbuds-Bluetooth-5-3-Headset-Microphone-Touch-Control-IPX7-Waterproof-High-Fidelity-Stereo-Earphones-Sports-Work-66H-Playtime-Lapto_51533b6e-c49e-4459-9787-3c45d26de3ec.6ad6cf413848b8ff85c27d97aca66841.jpeg"
+                        alt="" class="card-img-top">
+                    <div class="card-text">$12.77</div>
+                    <p class="card-title fw-bold">Wirless Head accordion</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-success">Add To Cart</button>
+                        <button class="btn btn-secondary">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
