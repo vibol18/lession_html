@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .output{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            width: 300px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <input type="text" id="num">
+        <button type="submit">Submit</button>
+        <div id="output" class="output"></div>
+    </form>
+    
+    <script>
+        let form = document.getElementById("form")
+        let output = document.getElementById("output")
+        form.addEventListener("click",function(e){
+            e.preventDefault()
+            let i = document.getElementById("num").value
+            if (i==10){
+                output.style.display ="block"
+            }else{
+                alert('Num need 10');
+                output.style.display ="none"
+            }
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="helloworld()">Click</button> -->
+
+    <script>
+        //globle declare
+        let names;
+        let age;
+        let size =0;
+        let gender;
+        function helloworld(){
+        console.log("hello world");
+        }
+        //function declaration
+        //function non return non param
+        function input(){
+            names = prompt("Enter Name:")
+            age = Number(prompt("Enter Age"))
+            gender = prompt("ENter Gender")
+        }
+        function output(){
+            document.write("Name"+names)
+            document.write("age"+age)
+            document.write("gender"+gender)
+        }
+
+
+        //function parameter argument
+        //function has param
+        function wellcom(names){
+            document.write("Hello" + names);
+        }
+
+        //default value paramer
+        function hello(name2 = "Khemrak"){
+            document.write("Hello" + name2)
+        }
+
+        function sum(a,b){
+            console.log(a+b)
+        }
+        //function has param 
+        function sum3(a,b,c){
+        console.log(a+b+c);
+            
+        }
+        //has param has return
+        function sum4(e,f){
+            return e +f;
+        }
+        id = 5
+        console.log(id);
+        wellcom("satya")
+        wellcom("sengkea")
+        wellcom("hour")
+        hello("kakakaakak")
+        sum(10,40)
+        sum(70,20)
+        sum3(10,30,29)
+        sum3(10,30,29)
+        let result = sum4(30,40)
+        console.log(result);
+        
+    </script>
+</body>
+</html>

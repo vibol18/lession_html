@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result;
+        let a = Number(prompt("Enter A"))
+        let b = Number(prompt("Enter B:"))
+        let opt = prompt("Enter Option [+ - * /]")
+        if(opt == "-"){
+            result = a - b;
+        }else if(opt === "+"){
+            result = a + b;
+        }else if(opt == "*"){
+            result = a* b;
+        }else if(opt == "/"){
+            result = a/b;
+        }
+        document.write(`<h1>${result}</h1>`)
+    </script>
+</body>
+</html>

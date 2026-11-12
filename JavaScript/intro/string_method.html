@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = "visal";
+        document.write(names.toUpperCase()+",")
+        document.write(names.toLowerCase()+ " <br>")
+        let text = "      Visal Psn      ";
+        document.write(text.trim() + "<br>");
+        let search = "pizza favorit food";
+        document.write(search.includes("favorit")+"<br>")
+        let text1 = "HelloWorld";
+        document.write(text1.startsWith("Hello")+"<br>")
+        document.write(text1.endsWith("World"))
+        document.write(text1.length + "<br>")
+        let text2 = "Java script"
+        document.write(text2.slice(0,3) + "<br>")
+        document.write(text2.replace("Java","Visal")+"<br>")
+        let java =  "I love Java but Java ot sl yg"
+        document.write(java.replaceAll("Java","php")+"<br>")
+        let Fruit = "visal,khemrak,Sengkea";
+        document.write(Fruit.split(",").length)
+        //toLowercase split include toUppercase length
+    </script>
+</body>
+</html>

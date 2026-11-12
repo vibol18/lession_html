@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>1.Deposit</h1>
+        <h1>2.withdraw</h1>
+        <script>
+            let balance = 100;
+            let password;
+            let new_balance ;
+            let method = Number(prompt("Enter Method"));
+            if(method == 1){
+                password = Number(prompt("Jng Dak luy dak password mor:"))
+                if(password == 1234){
+                    new_balance = Number(prompt("Jng Dak luy man:"))
+                    if(new_balance <=0){
+                        alert("jom jng dak luy toch jeang 0 men bro")
+                    }else{
+                        balance +=new_balance
+                    }
+                    console.log(balance);
+                }else{
+                    console.log("Khos password hz May");
+                }
+            }
+            
+        </script>
+    </body>
+        
+
+    </html>

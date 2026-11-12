@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  -->
+    <script>
+       // if else
+        let age = prompt("Enter Age:")
+        if(age >= 18){
+            document.writeln("you are Adult")
+        }
+        if(age <= 17){
+            document.writeln("You are not adult")
+        }else{
+            console.log(`Wrong condition`);
+            
+        }
+        //if else if else
+        let day = prompt("Input Day [1-7]")
+        if (day == 1) {
+            document.write("mon")
+        }else if(day ==2){
+            document.write("tue")
+        }else if(day == 3){
+            document.write("Wen")
+        }else if(day == 4){
+            document.write("thu")
+        }else if(day == 5){
+            document.write("fri")
+        }else if(day == 6){
+            document.write("Sat")
+        }else if(day == 7){
+            document.writeln("Holiday")
+        }else{
+            document.writeln("Wroong Condition <br>")
+        }
+
+        //input uername and password
+        let username = prompt("Enter Username")
+        let pass = prompt("Enter Password")        
+        if(username == "khemrak" && pass == 126343){
+            document.writeln(`hello ${username}<br>`)
+        }else{
+            document.writeln("fuckk u satya <br>")
+        }
+    </script>
+</body>
+</html>
